@@ -92,33 +92,70 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
   </head>
   <body>
     <header>
       <div class="header">
         <div class="container-other">
-          <section class="container__inner">
-            <div class="info-email">
-              <div class="icon-email">
-                <img src="./assets/icon/icon-email.svg" alt="" />
+          <section class="header__inner">
+            <div class="header__mobile">
+              <!-- Mobile & Tablet -->
+               <input type="checkbox" name="menu-checkbox" id="menu-checkbox"  class="menu-checkbox" hidden>
+                <label for="menu-checkbox" class="toggle-menu">
+                  <img src="./assets/icon/toggle-menu-icon.svg" alt="">
+                </label>
+                <label for="menu-checkbox" class="menu-overlay"></label>
+                <label for="menu-checkbox" class="menu-drawer">
+                  <ul class="navbar">
+                    <li>
+                      <a href="#!" class="navbar__link">Projects</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="navbar__link">Journey</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="navbar__link">Service</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="navbar__link">Contact</a>
+                    </li>
+                  </ul>
+                </label>
+                <div class="info-email">
+                <div class="icon-email">
+                  <img src="./assets/icon/icon-email.svg" alt="" class="email-img"/>
+                </div>
+                <a href="#!" class="email">hi@arif.interactive</a>
               </div>
-              <a href="#!" class="email">hi@arif.interactive</a>
+              <img src="./assets/img/logo.png" alt="" class="logo" />
             </div>
-            <img src="./assets/img/logo.png" alt="" class="logo" />
-            <ul class="navbar">
-              <li>
-                <a href="#!" class="navbar__link">Projects</a>
-              </li>
-              <li>
-                <a href="#!" class="navbar__link">Journey</a>
-              </li>
-              <li>
-                <a href="#!" class="navbar__link">Service</a>
-              </li>
-              <li>
-                <a href="#!" class="navbar__link">Contact</a>
-              </li>
-            </ul>
+  
+            <div class="header__pc">
+              <div class="info-email">
+                <div class="icon-email">
+                  <img src="./assets/icon/icon-email.svg" alt="" class="email-img"/>
+                </div>
+                <a href="#!" class="email">hi@arif.interactive</a>
+              </div>
+              <img src="./assets/img/logo.png" alt="" class="logo" />
+              <ul class="navbar">
+                <li>
+                  <a href="#!" class="navbar__link">Projects</a>
+                </li>
+                <li>
+                  <a href="#!" class="navbar__link">Journey</a>
+                </li>
+                <li>
+                  <a href="#!" class="navbar__link">Service</a>
+                </li>
+                <li>
+                  <a href="#!" class="navbar__link">Contact</a>
+                </li>
+              </ul>
+            </div>
           </section>
 
           <section class="hero">
@@ -250,7 +287,7 @@
               non nisl tincidunt ut elementum turpis.
             </p>
             <div class="specialist__list">
-              <div class="specialist__item">
+              <div class="specialist__item specialist__item-active">
                 <div class="specialist__item-icon">
                   <img
                     src="./assets/icon/sp-icon-01.svg"
@@ -297,6 +334,11 @@
                 </p>
               </div>
             </div>
+            <div class="dots__list specialist-dots__list">
+              <div class="dot"></div>
+              <div class="dot dot-active"></div>
+              <div class="dot"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -315,7 +357,7 @@
               <!-- Item 1 -->
               <div class="project__item">
                 <div class="project__item--info">
-                  <h3 class="section-title">Wally Website</h3>
+                  <h3 class="section-title project__title">Wally Website</h3>
                   <p class="section-desc project__item-subtitle">
                     Lorem ipsum dolor amet, consectetur adipiscing st elit.
                   </p>
@@ -327,7 +369,7 @@
               <!-- Item 2 -->
               <div class="project__item">
                 <div class="project__item--info">
-                  <h3 class="section-title">Banking App</h3>
+                  <h3 class="section-title project__title">Banking App</h3>
                   <p class="section-desc project__item-subtitle">
                     Lorem ipsum dolor amet, consectetur adipiscing st elit.
                   </p>
@@ -339,7 +381,7 @@
               <!-- Item 3 -->
               <div class="project__item">
                 <div class="project__item--info">
-                  <h3 class="section-title">Web App</h3>
+                  <h3 class="section-title project__title">Web App</h3>
                   <p class="section-desc project__item-subtitle">
                     Lorem ipsum dolor amet, consectetur adipiscing st elit.
                   </p>
@@ -351,7 +393,7 @@
               <!-- Item 4 -->
               <div class="project__item">
                 <div class="project__item--info">
-                  <h3 class="section-title">Oculus Website</h3>
+                  <h3 class="section-title project__title">Oculus Website</h3>
                   <p class="section-desc project__item-subtitle">
                     Lorem ipsum dolor amet, consectetur adipiscing st elit.
                   </p>
@@ -373,31 +415,31 @@
             <div class="interact__top">
               <div class="interact__greeting">
                 <span class="section-title interact__label">Hey,,,,It’s Arif</span>
-                <img src="./assets/icon/interact-icon.svg" alt="">
+                <img src="./assets/icon/interact-icon.svg" alt="" class="interact-icon">
               </div>
               <h2 class="section-heading interact__heading">Interactive Designer</h2>
               <p class="section-desc interact__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
               <div class="interact__qty-group">
                 <div class="interact__qty-item">
                   <p class="section-heading qty-item__value">08+</p>
-                  <span class="section-desc">Years Experience</span>
+                  <span class="section-desc qty-item__desc">Years Experience</span>
                 </div>
   
                 <div class="interact__qty-item">
                   <p class="section-heading qty-item__value">21+</p>
-                  <span class="section-desc">Features & Awards</span>
+                  <span class="section-desc qty-item__desc">Features & Awards</span>
                 </div>
   
                 <div class="interact__qty-item">
                   <p class="section-heading qty-item__value">97%</p>
-                  <span class="section-desc">Clients Rating</span>
+                  <span class="section-desc qty-item__desc">Clients Rating</span>
                 </div>
               </div>
             </div>
 
             <!-- Video -->
             <div class="interact-video">
-              <video poster="./assets/img/poster-video.png" src="./assets/video/MR T X YANBI X HẰNG BINGBOONG - THU CUỐI REMIX (NIN HOÀNG & BIBO) I AUDIO VIDEO.mp4" width="1170" height="628">
+              <video src="./assets/video/MR T X YANBI X HẰNG BINGBOONG - THU CUỐI REMIX (NIN HOÀNG & BIBO) I AUDIO VIDEO.mp4" width="1170" height="628" playsinline>
               </video>
               <div class="play-video">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none">
@@ -568,9 +610,16 @@
               <a href="#!" class="space__email">@interaction_arif</a>
             </div>
             <div class="space__media">
-              <img src="./assets/img/space-img-01.png" alt="" class="space__img" >
+              <img src="./assets/img/space-img-01.png" alt="" class="space__img space__img-active" >
               <img src="./assets/img/space-img-02.png" alt="" class="space__img">
               <img src="./assets/img/space-img-03.png" alt="" class="space__img">
+            </div>
+            <div class="dots__list">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot dot-active"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
             </div>
           </div>
         </div>
@@ -593,10 +642,10 @@
 
     <footer class="footer">
       <div class="footer-container">
-        <div class="container-other container__inner">
+        <div class="container-other">
           <div class="info-email">
             <div class="icon-email">
-              <img src="./assets/icon/icon-email.svg" alt="" />
+              <img src="./assets/icon/icon-email.svg" alt="" class="email-img"/>
             </div>
             <a href="#!" class="email">hi@arif.interactive</a>
           </div>
