@@ -81,6 +81,7 @@ textarea {
 .header {
   background: #fbfaff;
   padding-top: 20px;
+  position: relative;
 }
 
 .header__pc {
@@ -231,7 +232,7 @@ li:last-child .navbar__link {
 
 .decor-sm {
   position: absolute;
-  right: -175px;
+  right: 40px;
   bottom: 0;
 }
 
